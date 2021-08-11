@@ -13,7 +13,7 @@ CFootBotDiffusion::CFootBotDiffusion() :
    m_pcProximity(NULL),
    m_cAlpha(10.0f),
    m_fDelta(0.5f),
-   m_fWheelVelocity(2.5f),
+   m_fWheelVelocity(5.0f),
    m_cGoStraightAngleRange(-ToRadians(m_cAlpha),
                            ToRadians(m_cAlpha)) {}
 
@@ -71,11 +71,11 @@ void CFootBotDiffusion::ControlStep() {
    }
    cAccumulator /= tProxReads.size();
    /* If the angle of the vector is small enough and the closest obstacle
-    * is far enough, continue going straight, otherwise curve a little
+    * is far enough, continue going straight, otherwise curve a little HAHA
     */
    CRadians cAngle = cAccumulator.Angle();
    if(m_cGoStraightAngleRange.WithinMinBoundIncludedMaxBoundIncluded(cAngle) &&
-      cAccumulator.Length() < m_fDelta ) {
+      cAccumulator.Length() < 1e-6f) {
       /* Go straight */
       m_pcWheels->SetLinearVelocity(m_fWheelVelocity, m_fWheelVelocity);
    }
