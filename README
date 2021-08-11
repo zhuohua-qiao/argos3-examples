@@ -1,12 +1,13 @@
 ====================
-==                ==
-== ARGoS EXAMPLES ==
-==                ==
+==    A Fork of   ==
+==     ARGoS      ==
+==    EXAMPLES    ==
 ====================
 
-AUTHOR: Carlo Pinciroli <ilpincy@gmail.com>
-DATE: 22/03/2015
+AUTHOR: George Qiao <georgeqiao1999@gmail.com>
+DATE: Aug. 10, 2021
 
+This is my (simplest) solution to the coding challenge.
 
 
 *** INTRODUCTION ***
@@ -200,8 +201,6 @@ allows one to test a specific neural network.
 
 
 
-*** WHAT'S NEXT? ***
+*** READ MORE ***
 
-More examples and a complete manual. I'm in the process of writing it,
-I do it a little bit every day. If you have specific questions, you
-can contact me at <ilpincy@gmail.com>.
+Please go to https://github.com/ilpincy/argos3-examples for most updated information on ARGoS.
