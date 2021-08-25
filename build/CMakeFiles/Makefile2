@@ -313,40 +313,18 @@ controllers/footbot_synchronization/clean: controllers/footbot_synchronization/C
 
 # Recursive "all" directory target.
 embedding/all: embedding/mpga/all
-embedding/all: embedding/galib/all
 
 .PHONY : embedding/all
 
 # Recursive "preinstall" directory target.
 embedding/preinstall: embedding/mpga/preinstall
-embedding/preinstall: embedding/galib/preinstall
 
 .PHONY : embedding/preinstall
 
 # Recursive "clean" directory target.
 embedding/clean: embedding/mpga/clean
-embedding/clean: embedding/galib/clean
 
 .PHONY : embedding/clean
-
-#=============================================================================
-# Directory level rules for directory embedding/galib
-
-# Recursive "all" directory target.
-embedding/galib/all: embedding/galib/CMakeFiles/galib_phototaxis.dir/all
-
-.PHONY : embedding/galib/all
-
-# Recursive "preinstall" directory target.
-embedding/galib/preinstall:
-
-.PHONY : embedding/galib/preinstall
-
-# Recursive "clean" directory target.
-embedding/galib/clean: embedding/galib/CMakeFiles/galib_phototaxis.dir/clean
-embedding/galib/clean: embedding/galib/CMakeFiles/galib_phototaxis_autogen.dir/clean
-
-.PHONY : embedding/galib/clean
 
 #=============================================================================
 # Directory level rules for directory embedding/mpga
@@ -377,7 +355,6 @@ loop_functions/all: loop_functions/custom_distributions_loop_functions/all
 loop_functions/all: loop_functions/trajectory_loop_functions/all
 loop_functions/all: loop_functions/id_loop_functions/all
 loop_functions/all: loop_functions/manualcontrol_loop_functions/all
-loop_functions/all: loop_functions/galib_phototaxis_loop_functions/all
 
 .PHONY : loop_functions/all
 
@@ -388,7 +365,6 @@ loop_functions/preinstall: loop_functions/custom_distributions_loop_functions/pr
 loop_functions/preinstall: loop_functions/trajectory_loop_functions/preinstall
 loop_functions/preinstall: loop_functions/id_loop_functions/preinstall
 loop_functions/preinstall: loop_functions/manualcontrol_loop_functions/preinstall
-loop_functions/preinstall: loop_functions/galib_phototaxis_loop_functions/preinstall
 
 .PHONY : loop_functions/preinstall
 
@@ -399,7 +375,6 @@ loop_functions/clean: loop_functions/custom_distributions_loop_functions/clean
 loop_functions/clean: loop_functions/trajectory_loop_functions/clean
 loop_functions/clean: loop_functions/id_loop_functions/clean
 loop_functions/clean: loop_functions/manualcontrol_loop_functions/clean
-loop_functions/clean: loop_functions/galib_phototaxis_loop_functions/clean
 
 .PHONY : loop_functions/clean
 
@@ -440,25 +415,6 @@ loop_functions/foraging_loop_functions/clean: loop_functions/foraging_loop_funct
 loop_functions/foraging_loop_functions/clean: loop_functions/foraging_loop_functions/CMakeFiles/foraging_loop_functions_autogen.dir/clean
 
 .PHONY : loop_functions/foraging_loop_functions/clean
-
-#=============================================================================
-# Directory level rules for directory loop_functions/galib_phototaxis_loop_functions
-
-# Recursive "all" directory target.
-loop_functions/galib_phototaxis_loop_functions/all: loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions.dir/all
-
-.PHONY : loop_functions/galib_phototaxis_loop_functions/all
-
-# Recursive "preinstall" directory target.
-loop_functions/galib_phototaxis_loop_functions/preinstall:
-
-.PHONY : loop_functions/galib_phototaxis_loop_functions/preinstall
-
-# Recursive "clean" directory target.
-loop_functions/galib_phototaxis_loop_functions/clean: loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions.dir/clean
-loop_functions/galib_phototaxis_loop_functions/clean: loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions_autogen.dir/clean
-
-.PHONY : loop_functions/galib_phototaxis_loop_functions/clean
 
 #=============================================================================
 # Directory level rules for directory loop_functions/id_loop_functions
@@ -1143,7 +1099,7 @@ loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir
 loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir/all: loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions_autogen.dir/all
 	$(MAKE) -f loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir/build.make loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir/depend
 	$(MAKE) -f loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir/build.make loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/georg/ARGoS/argos3-examples/build/CMakeFiles --progress-num=79,80,81 "Built target mpga_phototaxis_loop_functions"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/georg/ARGoS/argos3-examples/build/CMakeFiles --progress-num=71,72,73 "Built target mpga_phototaxis_loop_functions"
 .PHONY : loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1170,7 +1126,7 @@ loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir
 loop_functions/mpga_loop_functions/CMakeFiles/mpga.dir/all: loop_functions/mpga_loop_functions/CMakeFiles/mpga_autogen.dir/all
 	$(MAKE) -f loop_functions/mpga_loop_functions/CMakeFiles/mpga.dir/build.make loop_functions/mpga_loop_functions/CMakeFiles/mpga.dir/depend
 	$(MAKE) -f loop_functions/mpga_loop_functions/CMakeFiles/mpga.dir/build.make loop_functions/mpga_loop_functions/CMakeFiles/mpga.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/georg/ARGoS/argos3-examples/build/CMakeFiles --progress-num=70,71,72,73 "Built target mpga"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/georg/ARGoS/argos3-examples/build/CMakeFiles --progress-num=62,63,64,65 "Built target mpga"
 .PHONY : loop_functions/mpga_loop_functions/CMakeFiles/mpga.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1198,7 +1154,7 @@ loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions_aut
 loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions_autogen.dir/all: loop_functions/mpga_loop_functions/CMakeFiles/mpga.dir/all
 	$(MAKE) -f loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions_autogen.dir/build.make loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions_autogen.dir/depend
 	$(MAKE) -f loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions_autogen.dir/build.make loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/georg/ARGoS/argos3-examples/build/CMakeFiles --progress-num=82 "Built target mpga_phototaxis_loop_functions_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/georg/ARGoS/argos3-examples/build/CMakeFiles --progress-num=74 "Built target mpga_phototaxis_loop_functions_autogen"
 .PHONY : loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions_autogen.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1225,7 +1181,7 @@ loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions_aut
 loop_functions/mpga_loop_functions/CMakeFiles/mpga_autogen.dir/all:
 	$(MAKE) -f loop_functions/mpga_loop_functions/CMakeFiles/mpga_autogen.dir/build.make loop_functions/mpga_loop_functions/CMakeFiles/mpga_autogen.dir/depend
 	$(MAKE) -f loop_functions/mpga_loop_functions/CMakeFiles/mpga_autogen.dir/build.make loop_functions/mpga_loop_functions/CMakeFiles/mpga_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/georg/ARGoS/argos3-examples/build/CMakeFiles --progress-num=74 "Built target mpga_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/georg/ARGoS/argos3-examples/build/CMakeFiles --progress-num=66 "Built target mpga_autogen"
 .PHONY : loop_functions/mpga_loop_functions/CMakeFiles/mpga_autogen.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1306,7 +1262,7 @@ loop_functions/custom_distributions_loop_functions/CMakeFiles/custom_distributio
 loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/all: loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions_autogen.dir/all
 	$(MAKE) -f loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/build.make loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/depend
 	$(MAKE) -f loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/build.make loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/georg/ARGoS/argos3-examples/build/CMakeFiles --progress-num=83,84,85,86 "Built target trajectory_loop_functions"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/georg/ARGoS/argos3-examples/build/CMakeFiles --progress-num=75,76,77,78 "Built target trajectory_loop_functions"
 .PHONY : loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1333,7 +1289,7 @@ loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.di
 loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions_autogen.dir/all:
 	$(MAKE) -f loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions_autogen.dir/build.make loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions_autogen.dir/depend
 	$(MAKE) -f loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions_autogen.dir/build.make loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/georg/ARGoS/argos3-examples/build/CMakeFiles --progress-num=87 "Built target trajectory_loop_functions_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/georg/ARGoS/argos3-examples/build/CMakeFiles --progress-num=79 "Built target trajectory_loop_functions_autogen"
 .PHONY : loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions_autogen.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1360,7 +1316,7 @@ loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions_au
 loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/all: loop_functions/id_loop_functions/CMakeFiles/id_loop_functions_autogen.dir/all
 	$(MAKE) -f loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/build.make loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/depend
 	$(MAKE) -f loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/build.make loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/georg/ARGoS/argos3-examples/build/CMakeFiles --progress-num=62,63,64 "Built target id_loop_functions"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/georg/ARGoS/argos3-examples/build/CMakeFiles --progress-num=54,55,56 "Built target id_loop_functions"
 .PHONY : loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1387,7 +1343,7 @@ loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/clean:
 loop_functions/id_loop_functions/CMakeFiles/id_loop_functions_autogen.dir/all:
 	$(MAKE) -f loop_functions/id_loop_functions/CMakeFiles/id_loop_functions_autogen.dir/build.make loop_functions/id_loop_functions/CMakeFiles/id_loop_functions_autogen.dir/depend
 	$(MAKE) -f loop_functions/id_loop_functions/CMakeFiles/id_loop_functions_autogen.dir/build.make loop_functions/id_loop_functions/CMakeFiles/id_loop_functions_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/georg/ARGoS/argos3-examples/build/CMakeFiles --progress-num=65 "Built target id_loop_functions_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/georg/ARGoS/argos3-examples/build/CMakeFiles --progress-num=57 "Built target id_loop_functions_autogen"
 .PHONY : loop_functions/id_loop_functions/CMakeFiles/id_loop_functions_autogen.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1415,7 +1371,7 @@ loop_functions/manualcontrol_loop_functions/CMakeFiles/manualcontrol_loop_functi
 loop_functions/manualcontrol_loop_functions/CMakeFiles/manualcontrol_loop_functions.dir/all: loop_functions/manualcontrol_loop_functions/CMakeFiles/manualcontrol_loop_functions_autogen.dir/all
 	$(MAKE) -f loop_functions/manualcontrol_loop_functions/CMakeFiles/manualcontrol_loop_functions.dir/build.make loop_functions/manualcontrol_loop_functions/CMakeFiles/manualcontrol_loop_functions.dir/depend
 	$(MAKE) -f loop_functions/manualcontrol_loop_functions/CMakeFiles/manualcontrol_loop_functions.dir/build.make loop_functions/manualcontrol_loop_functions/CMakeFiles/manualcontrol_loop_functions.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/georg/ARGoS/argos3-examples/build/CMakeFiles --progress-num=66,67,68 "Built target manualcontrol_loop_functions"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/georg/ARGoS/argos3-examples/build/CMakeFiles --progress-num=58,59,60 "Built target manualcontrol_loop_functions"
 .PHONY : loop_functions/manualcontrol_loop_functions/CMakeFiles/manualcontrol_loop_functions.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1442,7 +1398,7 @@ loop_functions/manualcontrol_loop_functions/CMakeFiles/manualcontrol_loop_functi
 loop_functions/manualcontrol_loop_functions/CMakeFiles/manualcontrol_loop_functions_autogen.dir/all: controllers/footbot_manualcontrol/CMakeFiles/footbot_manualcontrol.dir/all
 	$(MAKE) -f loop_functions/manualcontrol_loop_functions/CMakeFiles/manualcontrol_loop_functions_autogen.dir/build.make loop_functions/manualcontrol_loop_functions/CMakeFiles/manualcontrol_loop_functions_autogen.dir/depend
 	$(MAKE) -f loop_functions/manualcontrol_loop_functions/CMakeFiles/manualcontrol_loop_functions_autogen.dir/build.make loop_functions/manualcontrol_loop_functions/CMakeFiles/manualcontrol_loop_functions_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/georg/ARGoS/argos3-examples/build/CMakeFiles --progress-num=69 "Built target manualcontrol_loop_functions_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/georg/ARGoS/argos3-examples/build/CMakeFiles --progress-num=61 "Built target manualcontrol_loop_functions_autogen"
 .PHONY : loop_functions/manualcontrol_loop_functions/CMakeFiles/manualcontrol_loop_functions_autogen.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1463,61 +1419,6 @@ loop_functions/manualcontrol_loop_functions/CMakeFiles/manualcontrol_loop_functi
 .PHONY : loop_functions/manualcontrol_loop_functions/CMakeFiles/manualcontrol_loop_functions_autogen.dir/clean
 
 #=============================================================================
-# Target rules for target loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions.dir
-
-# All Build rule for target.
-loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions.dir/all: controllers/footbot_nn/CMakeFiles/footbot_nn.dir/all
-loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions.dir/all: loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions_autogen.dir/all
-	$(MAKE) -f loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions.dir/build.make loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions.dir/depend
-	$(MAKE) -f loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions.dir/build.make loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/georg/ARGoS/argos3-examples/build/CMakeFiles --progress-num=58,59,60 "Built target galib_phototaxis_loop_functions"
-.PHONY : loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions.dir/all
-
-# Build rule for subdir invocation for target.
-loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/georg/ARGoS/argos3-examples/build/CMakeFiles 11
-	$(MAKE) -f CMakeFiles/Makefile2 loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/georg/ARGoS/argos3-examples/build/CMakeFiles 0
-.PHONY : loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions.dir/rule
-
-# Convenience name for target.
-galib_phototaxis_loop_functions: loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions.dir/rule
-
-.PHONY : galib_phototaxis_loop_functions
-
-# clean rule for target.
-loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions.dir/clean:
-	$(MAKE) -f loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions.dir/build.make loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions.dir/clean
-.PHONY : loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions.dir/clean
-
-#=============================================================================
-# Target rules for target loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions_autogen.dir
-
-# All Build rule for target.
-loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions_autogen.dir/all: controllers/footbot_nn/CMakeFiles/footbot_nn.dir/all
-	$(MAKE) -f loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions_autogen.dir/build.make loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions_autogen.dir/depend
-	$(MAKE) -f loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions_autogen.dir/build.make loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/georg/ARGoS/argos3-examples/build/CMakeFiles --progress-num=61 "Built target galib_phototaxis_loop_functions_autogen"
-.PHONY : loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions_autogen.dir/all
-
-# Build rule for subdir invocation for target.
-loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/georg/ARGoS/argos3-examples/build/CMakeFiles 8
-	$(MAKE) -f CMakeFiles/Makefile2 loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions_autogen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/georg/ARGoS/argos3-examples/build/CMakeFiles 0
-.PHONY : loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions_autogen.dir/rule
-
-# Convenience name for target.
-galib_phototaxis_loop_functions_autogen: loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions_autogen.dir/rule
-
-.PHONY : galib_phototaxis_loop_functions_autogen
-
-# clean rule for target.
-loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions_autogen.dir/clean:
-	$(MAKE) -f loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions_autogen.dir/build.make loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions_autogen.dir/clean
-.PHONY : loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions_autogen.dir/clean
-
-#=============================================================================
 # Target rules for target embedding/mpga/CMakeFiles/mpga_phototaxis.dir
 
 # All Build rule for target.
@@ -1527,7 +1428,7 @@ embedding/mpga/CMakeFiles/mpga_phototaxis.dir/all: loop_functions/mpga_loop_func
 embedding/mpga/CMakeFiles/mpga_phototaxis.dir/all: embedding/mpga/CMakeFiles/mpga_phototaxis_autogen.dir/all
 	$(MAKE) -f embedding/mpga/CMakeFiles/mpga_phototaxis.dir/build.make embedding/mpga/CMakeFiles/mpga_phototaxis.dir/depend
 	$(MAKE) -f embedding/mpga/CMakeFiles/mpga_phototaxis.dir/build.make embedding/mpga/CMakeFiles/mpga_phototaxis.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/georg/ARGoS/argos3-examples/build/CMakeFiles --progress-num=75,76,77 "Built target mpga_phototaxis"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/georg/ARGoS/argos3-examples/build/CMakeFiles --progress-num=67,68,69 "Built target mpga_phototaxis"
 .PHONY : embedding/mpga/CMakeFiles/mpga_phototaxis.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1555,7 +1456,7 @@ embedding/mpga/CMakeFiles/mpga_phototaxis_autogen.dir/all: controllers/footbot_n
 embedding/mpga/CMakeFiles/mpga_phototaxis_autogen.dir/all: loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir/all
 	$(MAKE) -f embedding/mpga/CMakeFiles/mpga_phototaxis_autogen.dir/build.make embedding/mpga/CMakeFiles/mpga_phototaxis_autogen.dir/depend
 	$(MAKE) -f embedding/mpga/CMakeFiles/mpga_phototaxis_autogen.dir/build.make embedding/mpga/CMakeFiles/mpga_phototaxis_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/georg/ARGoS/argos3-examples/build/CMakeFiles --progress-num=78 "Built target mpga_phototaxis_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/georg/ARGoS/argos3-examples/build/CMakeFiles --progress-num=70 "Built target mpga_phototaxis_autogen"
 .PHONY : embedding/mpga/CMakeFiles/mpga_phototaxis_autogen.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1574,63 +1475,6 @@ mpga_phototaxis_autogen: embedding/mpga/CMakeFiles/mpga_phototaxis_autogen.dir/r
 embedding/mpga/CMakeFiles/mpga_phototaxis_autogen.dir/clean:
 	$(MAKE) -f embedding/mpga/CMakeFiles/mpga_phototaxis_autogen.dir/build.make embedding/mpga/CMakeFiles/mpga_phototaxis_autogen.dir/clean
 .PHONY : embedding/mpga/CMakeFiles/mpga_phototaxis_autogen.dir/clean
-
-#=============================================================================
-# Target rules for target embedding/galib/CMakeFiles/galib_phototaxis.dir
-
-# All Build rule for target.
-embedding/galib/CMakeFiles/galib_phototaxis.dir/all: controllers/footbot_nn/CMakeFiles/footbot_nn.dir/all
-embedding/galib/CMakeFiles/galib_phototaxis.dir/all: loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions.dir/all
-embedding/galib/CMakeFiles/galib_phototaxis.dir/all: embedding/galib/CMakeFiles/galib_phototaxis_autogen.dir/all
-	$(MAKE) -f embedding/galib/CMakeFiles/galib_phototaxis.dir/build.make embedding/galib/CMakeFiles/galib_phototaxis.dir/depend
-	$(MAKE) -f embedding/galib/CMakeFiles/galib_phototaxis.dir/build.make embedding/galib/CMakeFiles/galib_phototaxis.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/georg/ARGoS/argos3-examples/build/CMakeFiles --progress-num=54,55,56 "Built target galib_phototaxis"
-.PHONY : embedding/galib/CMakeFiles/galib_phototaxis.dir/all
-
-# Build rule for subdir invocation for target.
-embedding/galib/CMakeFiles/galib_phototaxis.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/georg/ARGoS/argos3-examples/build/CMakeFiles 15
-	$(MAKE) -f CMakeFiles/Makefile2 embedding/galib/CMakeFiles/galib_phototaxis.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/georg/ARGoS/argos3-examples/build/CMakeFiles 0
-.PHONY : embedding/galib/CMakeFiles/galib_phototaxis.dir/rule
-
-# Convenience name for target.
-galib_phototaxis: embedding/galib/CMakeFiles/galib_phototaxis.dir/rule
-
-.PHONY : galib_phototaxis
-
-# clean rule for target.
-embedding/galib/CMakeFiles/galib_phototaxis.dir/clean:
-	$(MAKE) -f embedding/galib/CMakeFiles/galib_phototaxis.dir/build.make embedding/galib/CMakeFiles/galib_phototaxis.dir/clean
-.PHONY : embedding/galib/CMakeFiles/galib_phototaxis.dir/clean
-
-#=============================================================================
-# Target rules for target embedding/galib/CMakeFiles/galib_phototaxis_autogen.dir
-
-# All Build rule for target.
-embedding/galib/CMakeFiles/galib_phototaxis_autogen.dir/all: controllers/footbot_nn/CMakeFiles/footbot_nn.dir/all
-embedding/galib/CMakeFiles/galib_phototaxis_autogen.dir/all: loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions.dir/all
-	$(MAKE) -f embedding/galib/CMakeFiles/galib_phototaxis_autogen.dir/build.make embedding/galib/CMakeFiles/galib_phototaxis_autogen.dir/depend
-	$(MAKE) -f embedding/galib/CMakeFiles/galib_phototaxis_autogen.dir/build.make embedding/galib/CMakeFiles/galib_phototaxis_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/georg/ARGoS/argos3-examples/build/CMakeFiles --progress-num=57 "Built target galib_phototaxis_autogen"
-.PHONY : embedding/galib/CMakeFiles/galib_phototaxis_autogen.dir/all
-
-# Build rule for subdir invocation for target.
-embedding/galib/CMakeFiles/galib_phototaxis_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/georg/ARGoS/argos3-examples/build/CMakeFiles 12
-	$(MAKE) -f CMakeFiles/Makefile2 embedding/galib/CMakeFiles/galib_phototaxis_autogen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/georg/ARGoS/argos3-examples/build/CMakeFiles 0
-.PHONY : embedding/galib/CMakeFiles/galib_phototaxis_autogen.dir/rule
-
-# Convenience name for target.
-galib_phototaxis_autogen: embedding/galib/CMakeFiles/galib_phototaxis_autogen.dir/rule
-
-.PHONY : galib_phototaxis_autogen
-
-# clean rule for target.
-embedding/galib/CMakeFiles/galib_phototaxis_autogen.dir/clean:
-	$(MAKE) -f embedding/galib/CMakeFiles/galib_phototaxis_autogen.dir/build.make embedding/galib/CMakeFiles/galib_phototaxis_autogen.dir/clean
-.PHONY : embedding/galib/CMakeFiles/galib_phototaxis_autogen.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

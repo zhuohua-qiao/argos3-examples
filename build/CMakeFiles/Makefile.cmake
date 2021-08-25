@@ -24,12 +24,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../controllers/footbot_nn/CMakeLists.txt"
   "../controllers/footbot_synchronization/CMakeLists.txt"
   "../embedding/CMakeLists.txt"
-  "../embedding/galib/CMakeLists.txt"
   "../embedding/mpga/CMakeLists.txt"
   "../loop_functions/CMakeLists.txt"
   "../loop_functions/custom_distributions_loop_functions/CMakeLists.txt"
   "../loop_functions/foraging_loop_functions/CMakeLists.txt"
-  "../loop_functions/galib_phototaxis_loop_functions/CMakeLists.txt"
   "../loop_functions/id_loop_functions/CMakeLists.txt"
   "../loop_functions/manualcontrol_loop_functions/CMakeLists.txt"
   "../loop_functions/mpga_loop_functions/CMakeLists.txt"
@@ -205,10 +203,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "loop_functions/trajectory_loop_functions/CMakeFiles/CMakeDirectoryInformation.cmake"
   "loop_functions/id_loop_functions/CMakeFiles/CMakeDirectoryInformation.cmake"
   "loop_functions/manualcontrol_loop_functions/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "loop_functions/galib_phototaxis_loop_functions/CMakeFiles/CMakeDirectoryInformation.cmake"
   "embedding/CMakeFiles/CMakeDirectoryInformation.cmake"
   "embedding/mpga/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "embedding/galib/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -247,10 +243,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "loop_functions/id_loop_functions/CMakeFiles/id_loop_functions_autogen.dir/DependInfo.cmake"
   "loop_functions/manualcontrol_loop_functions/CMakeFiles/manualcontrol_loop_functions.dir/DependInfo.cmake"
   "loop_functions/manualcontrol_loop_functions/CMakeFiles/manualcontrol_loop_functions_autogen.dir/DependInfo.cmake"
-  "loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions.dir/DependInfo.cmake"
-  "loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions_autogen.dir/DependInfo.cmake"
   "embedding/mpga/CMakeFiles/mpga_phototaxis.dir/DependInfo.cmake"
   "embedding/mpga/CMakeFiles/mpga_phototaxis_autogen.dir/DependInfo.cmake"
-  "embedding/galib/CMakeFiles/galib_phototaxis.dir/DependInfo.cmake"
-  "embedding/galib/CMakeFiles/galib_phototaxis_autogen.dir/DependInfo.cmake"
   )

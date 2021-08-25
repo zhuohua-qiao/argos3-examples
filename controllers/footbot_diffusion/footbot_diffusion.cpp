@@ -70,22 +70,23 @@ void CFootBotDiffusion::ControlStep() {
       cAccumulator += CVector2(tProxReads[i].Value, tProxReads[i].Angle);
    }
    cAccumulator /= tProxReads.size();
-   /* If the angle of the vector is small enough and the closest obstacle
-    * is far enough, continue going straight, otherwise curve a little
-    */
    CRadians cAngle = cAccumulator.Angle();
-   if(m_cGoStraightAngleRange.WithinMinBoundIncludedMaxBoundIncluded(cAngle) &&
-      cAccumulator.Length() < m_fDelta ) {
+   /* Continue to go straight either if no obstacle is sensed, or if the angle is greater
+      than a right angle so that it will move away from the obstacle by going straight
+      The mininum angle is set to be 2.0 radians (~115 deg) to avoid getting stuck in a sharp corner */
+   if(cAccumulator.Length() < 1e-6f || cAngle.GetValue() > 2.0f || cAngle.GetValue() < -2.0f) {
       /* Go straight */
       m_pcWheels->SetLinearVelocity(m_fWheelVelocity, m_fWheelVelocity);
    }
    else {
-      /* Turn, depending on the sign of the angle */
+      /* Turn in place (without "drifting"), depending on the sign of the angle
+         Advantage: turning in place keeps the distance and avoids collision
+         Disadvantage: might cause it to stuck in a loop if heading into a sharp corner */
       if(cAngle.GetValue() > 0.0f) {
-         m_pcWheels->SetLinearVelocity(m_fWheelVelocity, 0.0f);
+         m_pcWheels->SetLinearVelocity(m_fWheelVelocity, -m_fWheelVelocity);
       }
       else {
-         m_pcWheels->SetLinearVelocity(0.0f, m_fWheelVelocity);
+         m_pcWheels->SetLinearVelocity(-m_fWheelVelocity, m_fWheelVelocity);
       }
    }
 }

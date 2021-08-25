@@ -553,32 +553,6 @@ manualcontrol_loop_functions_autogen/fast:
 .PHONY : manualcontrol_loop_functions_autogen/fast
 
 #=============================================================================
-# Target rules for targets named galib_phototaxis_loop_functions
-
-# Build rule for target.
-galib_phototaxis_loop_functions: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 galib_phototaxis_loop_functions
-.PHONY : galib_phototaxis_loop_functions
-
-# fast build rule for target.
-galib_phototaxis_loop_functions/fast:
-	$(MAKE) -f loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions.dir/build.make loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions.dir/build
-.PHONY : galib_phototaxis_loop_functions/fast
-
-#=============================================================================
-# Target rules for targets named galib_phototaxis_loop_functions_autogen
-
-# Build rule for target.
-galib_phototaxis_loop_functions_autogen: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 galib_phototaxis_loop_functions_autogen
-.PHONY : galib_phototaxis_loop_functions_autogen
-
-# fast build rule for target.
-galib_phototaxis_loop_functions_autogen/fast:
-	$(MAKE) -f loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions_autogen.dir/build.make loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions_autogen.dir/build
-.PHONY : galib_phototaxis_loop_functions_autogen/fast
-
-#=============================================================================
 # Target rules for targets named mpga_phototaxis
 
 # Build rule for target.
@@ -603,32 +577,6 @@ mpga_phototaxis_autogen: cmake_check_build_system
 mpga_phototaxis_autogen/fast:
 	$(MAKE) -f embedding/mpga/CMakeFiles/mpga_phototaxis_autogen.dir/build.make embedding/mpga/CMakeFiles/mpga_phototaxis_autogen.dir/build
 .PHONY : mpga_phototaxis_autogen/fast
-
-#=============================================================================
-# Target rules for targets named galib_phototaxis
-
-# Build rule for target.
-galib_phototaxis: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 galib_phototaxis
-.PHONY : galib_phototaxis
-
-# fast build rule for target.
-galib_phototaxis/fast:
-	$(MAKE) -f embedding/galib/CMakeFiles/galib_phototaxis.dir/build.make embedding/galib/CMakeFiles/galib_phototaxis.dir/build
-.PHONY : galib_phototaxis/fast
-
-#=============================================================================
-# Target rules for targets named galib_phototaxis_autogen
-
-# Build rule for target.
-galib_phototaxis_autogen: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 galib_phototaxis_autogen
-.PHONY : galib_phototaxis_autogen
-
-# fast build rule for target.
-galib_phototaxis_autogen/fast:
-	$(MAKE) -f embedding/galib/CMakeFiles/galib_phototaxis_autogen.dir/build.make embedding/galib/CMakeFiles/galib_phototaxis_autogen.dir/build
-.PHONY : galib_phototaxis_autogen/fast
 
 # Help Target
 help:
@@ -672,12 +620,8 @@ help:
 	@echo "... id_loop_functions_autogen"
 	@echo "... manualcontrol_loop_functions"
 	@echo "... manualcontrol_loop_functions_autogen"
-	@echo "... galib_phototaxis_loop_functions"
-	@echo "... galib_phototaxis_loop_functions_autogen"
 	@echo "... mpga_phototaxis"
 	@echo "... mpga_phototaxis_autogen"
-	@echo "... galib_phototaxis"
-	@echo "... galib_phototaxis_autogen"
 .PHONY : help
 
 

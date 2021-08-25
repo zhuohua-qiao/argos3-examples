@@ -70,17 +70,9 @@
 /mnt/c/Users/georg/ARGoS/argos3-examples/build/loop_functions/manualcontrol_loop_functions/CMakeFiles/edit_cache.dir
 /mnt/c/Users/georg/ARGoS/argos3-examples/build/loop_functions/manualcontrol_loop_functions/CMakeFiles/manualcontrol_loop_functions.dir
 /mnt/c/Users/georg/ARGoS/argos3-examples/build/loop_functions/manualcontrol_loop_functions/CMakeFiles/manualcontrol_loop_functions_autogen.dir
-/mnt/c/Users/georg/ARGoS/argos3-examples/build/loop_functions/galib_phototaxis_loop_functions/CMakeFiles/rebuild_cache.dir
-/mnt/c/Users/georg/ARGoS/argos3-examples/build/loop_functions/galib_phototaxis_loop_functions/CMakeFiles/edit_cache.dir
-/mnt/c/Users/georg/ARGoS/argos3-examples/build/loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions.dir
-/mnt/c/Users/georg/ARGoS/argos3-examples/build/loop_functions/galib_phototaxis_loop_functions/CMakeFiles/galib_phototaxis_loop_functions_autogen.dir
 /mnt/c/Users/georg/ARGoS/argos3-examples/build/embedding/CMakeFiles/rebuild_cache.dir
 /mnt/c/Users/georg/ARGoS/argos3-examples/build/embedding/CMakeFiles/edit_cache.dir
 /mnt/c/Users/georg/ARGoS/argos3-examples/build/embedding/mpga/CMakeFiles/rebuild_cache.dir
 /mnt/c/Users/georg/ARGoS/argos3-examples/build/embedding/mpga/CMakeFiles/edit_cache.dir
 /mnt/c/Users/georg/ARGoS/argos3-examples/build/embedding/mpga/CMakeFiles/mpga_phototaxis.dir
 /mnt/c/Users/georg/ARGoS/argos3-examples/build/embedding/mpga/CMakeFiles/mpga_phototaxis_autogen.dir
-/mnt/c/Users/georg/ARGoS/argos3-examples/build/embedding/galib/CMakeFiles/rebuild_cache.dir
-/mnt/c/Users/georg/ARGoS/argos3-examples/build/embedding/galib/CMakeFiles/edit_cache.dir
-/mnt/c/Users/georg/ARGoS/argos3-examples/build/embedding/galib/CMakeFiles/galib_phototaxis.dir
-/mnt/c/Users/georg/ARGoS/argos3-examples/build/embedding/galib/CMakeFiles/galib_phototaxis_autogen.dir

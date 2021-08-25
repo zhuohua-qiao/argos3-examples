@@ -264,10 +264,10 @@ FREEIMAGE_PLUS_INCLUDE_DIR:PATH=/usr/include
 FREEIMAGE_PLUS_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libfreeimageplus.so
 
 //Google PerfTools header location
-GALIB_INCLUDE_DIR:PATH=/usr/include
+GALIB_INCLUDE_DIR:PATH=GALIB_INCLUDE_DIR-NOTFOUND
 
 //Google PerfTools library location
-GALIB_LIBRARY:FILEPATH=/usr/lib/libga.so
+GALIB_LIBRARY:FILEPATH=GALIB_LIBRARY-NOTFOUND
 
 //Path to a file.
 GLUT_INCLUDE_DIR:PATH=/usr/include
@@ -382,9 +382,6 @@ footbot_synchronization_LIB_DEPENDS:STATIC=general;/usr/lib/x86_64-linux-gnu/lib
 
 //Dependencies for the target
 foraging_loop_functions_LIB_DEPENDS:STATIC=general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libfreeimage.so;general;/usr/lib/x86_64-linux-gnu/libfreeimageplus.so;general;/usr/lib/x86_64-linux-gnu/libGL.so;general;/usr/lib/x86_64-linux-gnu/libGLU.so;general;/usr/lib/x86_64-linux-gnu/libglut.so;general;/usr/lib/x86_64-linux-gnu/libXmu.so;general;/usr/lib/x86_64-linux-gnu/libXi.so;general;Qt5::Widgets;general;Qt5::Gui;general;/usr/lib/x86_64-linux-gnu/liblua5.3.so;general;/usr/lib/x86_64-linux-gnu/libm.so;general;footbot_foraging;general;argos3core_simulator;general;argos3plugin_simulator_dynamics2d;general;argos3plugin_simulator_entities;general;argos3plugin_simulator_footbot;general;argos3plugin_simulator_genericrobot;general;argos3plugin_simulator_media;general;argos3plugin_simulator_qtopengl;
-
-//Dependencies for the target
-galib_phototaxis_loop_functions_LIB_DEPENDS:STATIC=general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libfreeimage.so;general;/usr/lib/x86_64-linux-gnu/libfreeimageplus.so;general;/usr/lib/x86_64-linux-gnu/libGL.so;general;/usr/lib/x86_64-linux-gnu/libGLU.so;general;/usr/lib/x86_64-linux-gnu/libglut.so;general;/usr/lib/x86_64-linux-gnu/libXmu.so;general;/usr/lib/x86_64-linux-gnu/libXi.so;general;Qt5::Widgets;general;Qt5::Gui;general;/usr/lib/x86_64-linux-gnu/liblua5.3.so;general;/usr/lib/x86_64-linux-gnu/libm.so;general;footbot_nn;general;argos3core_simulator;general;argos3plugin_simulator_dynamics2d;general;argos3plugin_simulator_entities;general;argos3plugin_simulator_footbot;general;argos3plugin_simulator_genericrobot;general;argos3plugin_simulator_media;general;/usr/lib/libga.so;
 
 //Dependencies for the target
 id_loop_functions_LIB_DEPENDS:STATIC=general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libfreeimage.so;general;/usr/lib/x86_64-linux-gnu/libfreeimageplus.so;general;/usr/lib/x86_64-linux-gnu/libGL.so;general;/usr/lib/x86_64-linux-gnu/libGLU.so;general;/usr/lib/x86_64-linux-gnu/libglut.so;general;/usr/lib/x86_64-linux-gnu/libXmu.so;general;/usr/lib/x86_64-linux-gnu/libXi.so;general;Qt5::Widgets;general;Qt5::Gui;general;/usr/lib/x86_64-linux-gnu/liblua5.3.so;general;/usr/lib/x86_64-linux-gnu/libm.so;general;argos3core_simulator;general;argos3plugin_simulator_entities;general;argos3plugin_simulator_footbot;general;argos3plugin_simulator_qtopengl;general;/usr/lib/x86_64-linux-gnu/libGL.so;general;/usr/lib/x86_64-linux-gnu/libGLU.so;general;/usr/lib/x86_64-linux-gnu/libglut.so;general;/usr/lib/x86_64-linux-gnu/libXmu.so;general;/usr/lib/x86_64-linux-gnu/libXi.so;general;Qt5::Widgets;general;Qt5::Gui;
@@ -512,7 +509,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=23
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=21
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -561,8 +558,6 @@ DLFCN_INCLUDE_DIR-ADVANCED:INTERNAL=1
 DLFCN_LIBRARY-ADVANCED:INTERNAL=1
 //Details about finding DLFCN
 FIND_PACKAGE_MESSAGE_DETAILS_DLFCN:INTERNAL=[/usr/lib/x86_64-linux-gnu/libdl.so][/usr/include][v()]
-//Details about finding GALIB
-FIND_PACKAGE_MESSAGE_DETAILS_GALIB:INTERNAL=[/usr/lib/libga.so][/usr/include][v()]
 //Details about finding GLUT
 FIND_PACKAGE_MESSAGE_DETAILS_GLUT:INTERNAL=[/usr/lib/x86_64-linux-gnu/libglut.so][/usr/include][v()]
 //Details about finding Lua
