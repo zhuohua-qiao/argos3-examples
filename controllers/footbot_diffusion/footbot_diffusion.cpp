@@ -73,7 +73,7 @@ void CFootBotDiffusion::ControlStep() {
    CRadians cAngle = cAccumulator.Angle();
    /* Continue to go straight either if no obstacle is sensed, or if the angle is greater
       than a right angle so that it will move away from the obstacle by going straight
-      The mininum angle is set to be 2.0 radians (~115 deg) to avoid getting stuck in a sharp corner */
+      The mininum angle is set to be 2.0 radians (~115 deg) to (hopefully) avoid getting stuck in a sharp corner */
    if(cAccumulator.Length() < 1e-6f || cAngle.GetValue() > 2.0f || cAngle.GetValue() < -2.0f) {
       /* Go straight */
       m_pcWheels->SetLinearVelocity(m_fWheelVelocity, m_fWheelVelocity);
